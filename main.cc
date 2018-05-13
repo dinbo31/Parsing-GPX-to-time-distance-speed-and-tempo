@@ -26,7 +26,7 @@ void detailSession(std::string fileName)
 	double tempo;
 	
 	//on demande à l'utilisateur de saisir le nom du fichier
-	std::string road = "/home/fran6/Thomas/Running/Thomas/";
+	std::string road = "/home/user";
 	std::string extension = ".gpx";
 	std::string global = road + fileName + extension;
 		
@@ -71,7 +71,7 @@ void detailSession(std::string fileName)
 	
 	//initialisation des variables
 	ofstream myfile;
-	myfile.open ("/home/fran6/Thomas/Prog/running.cpp/test.txt");
+	myfile.open ("/home/test.txt");
 	myfile << "lap" << ";" << "time" << ";" << "distance" << ";" << "vitesse" << ";" << "tempo" << endl;
 	//boucle d'extraction des strings
 	for(std::string::size_type pos=0; pos<str.size(); pos+=startlap.size())
